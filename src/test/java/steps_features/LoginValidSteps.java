@@ -13,12 +13,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import page_objects.LoginPage;
 
 public  class LoginValidSteps {
-    private static WebDriver driver;
-
-
+    private static SharedDriver driver;
+    public LoginValidSteps(SharedDriver driver){
+        this.driver = driver;
+    }
     @Given("^I am about to login$")
     public void I_am_about_to_login() throws Throwable {
-        this.driver = new FirefoxDriver();
+
         driver.get("https://badoo.com/es/signin/?f=top");
         LoginPage page = new LoginPage(driver);
         if (!page.pageLoginExist()) {
@@ -38,8 +39,8 @@ public  class LoginValidSteps {
             throw new PendingException("Error, no estoy en la pagina correcta");
         }
     }
-    @After
-    public void quit(){
-        this.driver.close();
-    }
+//    @After
+//    public void quit(){
+//        this.driver.close();
+//    }
 }

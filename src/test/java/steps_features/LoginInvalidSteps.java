@@ -14,8 +14,10 @@ import page_objects.LoginPage;
 
 public class LoginInvalidSteps {
 
-private static WebDriver driver;
-
+private static SharedDriver driver;
+    public LoginInvalidSteps(SharedDriver driver){
+        this.driver = driver;
+    }
 //        @Before
 //         public void setUp() {
 //            driver = new FirefoxDriver();
@@ -35,9 +37,9 @@ private static WebDriver driver;
                 throw new PendingException("Error, I am not on Main menu");
             }
         }
-        @After
-        public void quit(){
-            driver.close();
-        }
+//        @After
+//        public void quit(){
+//            driver.close();
+//        }
     }
 
