@@ -17,9 +17,9 @@ public  class LoginValidSteps {
     public LoginValidSteps(SharedDriver driver){
         this.driver = driver;
     }
+
     @Given("^I am about to login$")
     public void I_am_about_to_login() throws Throwable {
-
         driver.get("https://badoo.com/es/signin/?f=top");
         LoginPage page = new LoginPage(driver);
         if (!page.pageLoginExist()) {

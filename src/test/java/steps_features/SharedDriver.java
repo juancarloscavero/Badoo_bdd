@@ -4,6 +4,7 @@ import cucumber.api.java.After;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -16,7 +17,7 @@ public class SharedDriver extends EventFiringWebDriver {
 private static WebDriver driver;
 
     public SharedDriver()  {
-        super(new FirefoxDriver());
+        super(ChooseDriver.ChooseOne());
     }
     @After
      public void tearDown() throws Exception {

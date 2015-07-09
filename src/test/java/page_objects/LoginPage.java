@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
     }
 
     public boolean pageMenuExist() {
-        return pageExist(By.className("skip_to_step"));
+        return pageExist(By.xpath(".//*[@id='head']/div/div[1]/a"));
     }
 
     public void enterCredentials(String user, String pass) {
