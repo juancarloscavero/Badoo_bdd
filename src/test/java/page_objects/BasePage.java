@@ -1,8 +1,7 @@
 package page_objects;
+import com.sun.prism.shader.Solid_TextureYV12_AlphaTest_Loader;
 import io.appium.java_client.AppiumDriver;
-import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -17,6 +16,7 @@ public class BasePage {
         wait = new WebDriverWait(driver, 20);
     }
     protected  void press( By by){
+
         wait.until(ExpectedConditions.elementToBeClickable(by));
         driver.findElement(by).click();
     }

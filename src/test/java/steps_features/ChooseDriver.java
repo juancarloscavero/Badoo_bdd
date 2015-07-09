@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.io.File;
+
 /**
  * Created by juancarlos.cavero on 09/07/2015.
  */
@@ -14,7 +16,8 @@ public abstract class ChooseDriver {
             driver = new FirefoxDriver();
         }
         else if(System.getProperty("browser.set").equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\juancarlos.cavero\\Desktop\\Badoo_bdd\\chromedriver.exe");
+            String filePath = new File("").getAbsolutePath().concat("/browsers/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", filePath);
             driver = new ChromeDriver();
         }
 
