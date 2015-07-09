@@ -18,7 +18,8 @@ public class MainPage extends BasePage{
     By addPhotoButton= By.xpath(".//*[@id='photo_list']/div[1]/div[2]/div/i/span");
     By upPhoto= By.xpath(".//*[@id='locality']/div/div[1]/div/p[1]/span[2]");
     By girlProfile= By.xpath(".//*[@id='search']/div[1]/div[1]/div[1]/div[1]/div/a");
-    By chat= By.xpath(".//*[@id='js-profile-block-user-menu']/div[2]/a");
+    By chat1= By.xpath(".//*[@id='js-profile-block-user-menu']/div[1]/a");
+    By chat2= By.xpath(".//*[@id='js-profile-block-user-menu']/div[2]/a");
     By chatText= By.xpath(".//*[@id='t']");
     By sendText= By.id("fpost");
     public MainPage(WebDriver driver){
@@ -34,14 +35,9 @@ public class MainPage extends BasePage{
     }
     public void addPhoto()  {
         press(addPhotoButton);
-        //"C:\\Users\\juancarlos.cavero\\Desktop\\Badoo_bdd\\Troll.jpg"
-       // press(upPhoto);
-
+        press(upPhoto);
         //driver.findElement(By.xpath("/html/body/input[1]")).sendKeys("C:\\Users\\juancarlos.cavero\\Desktop\\Badoo_bdd\\Troll.jpg");
-
-        setClipboardData("C:\\Users\\juancarlos.cavero\\Desktop\\Badoo_bdd\\Troll.jpg");
-
-//native key strokes for CTRL, V and ENTER keys
+        setClipboardData("Troll.jpg");
         try{
         Robot robot = new Robot();
             robot.keyPress(KeyEvent.VK_ENTER);
@@ -55,24 +51,17 @@ public class MainPage extends BasePage{
         } catch(AWTException e){
 
         }
-
-//        setClipboardData("C:\\Users\\Demo\\Desktop\\today.txt");
-////native key strokes for CTRL, V and ENTER keys
-//Robot robot = new Robot();
-//  robot.keyPress(KeyEvent.VK_ENTER);
-//  robot.keyRelease(KeyEvent.VK_ENTER);
-//robot.keyPress(KeyEvent.VK_CONTROL);
-//robot.keyPress(KeyEvent.VK_V);
-//robot.keyRelease(KeyEvent.VK_V);
-//robot.keyRelease(KeyEvent.VK_CONTROL);
-//robot.keyPress(KeyEvent.VK_ENTER);
-//robot.keyRelease(KeyEvent.VK_ENTER);
+        waiter(7);
     }
     public void buitreo(){
         press(mainButton);
         press(girlProfile);
-        press(chat);
-        fill(chatText,"Hola quesito de bola");
+        try {
+            press(chat2);
+        } catch (Exception e ){
+            press(chat1);
+        }
+        fill(chatText, "Hola quesito de bola");
         press(sendText);
     }
 

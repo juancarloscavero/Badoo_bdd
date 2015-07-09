@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 public class BasePage {
     protected final WebDriver driver;
     protected final WebDriverWait wait;
@@ -30,5 +32,9 @@ public class BasePage {
         } catch (TimeoutException ignored) {
             return false;
         }
+    }
+    protected void waiter(int time){
+        wait.withTimeout(time, TimeUnit.SECONDS);
+
     }
 }
