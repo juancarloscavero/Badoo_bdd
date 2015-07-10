@@ -35,32 +35,17 @@ public class MainPage extends BasePage{
     }
     public void perfil() {
         press(mainButton);
-        if(System.getProperty("browser.set").equals("chrome")){
-            WebElement element = driver.findElement(perfilButton);
-            ((JavascriptExecutor)driver).executeScript("window.scrollTo(0," + element.getLocation().y + ")");
-
-        }
+//        if(System.getProperty("browser.set").equals("chrome")){
+//            WebElement element = driver.findElement(perfilButton);
+//            ((JavascriptExecutor)driver).executeScript("window.scrollTo(0," + element.getLocation().y + ")");
+//        }
         press(perfilButton);
     }
     public void addPhoto()  {
 
-        //press(addPhotoButton);
-        press(upPhoto);
-        //driver.findElement(By.xpath("/html/body/input[1]")).sendKeys("C:\\Users\\juancarlos.cavero\\Desktop\\Badoo_bdd\\Troll.jpg");
-//        setClipboardData("Troll.jpg");
-//        try{
-//        Robot robot = new Robot();
-//            robot.keyPress(KeyEvent.VK_ENTER);
-//            robot.keyRelease(KeyEvent.VK_ENTER);
-//            robot.keyPress(KeyEvent.VK_CONTROL);
-//            robot.keyPress(KeyEvent.VK_V);
-//            robot.keyRelease(KeyEvent.VK_V);
-//            robot.keyRelease(KeyEvent.VK_CONTROL);
-//            robot.keyPress(KeyEvent.VK_ENTER);
-//            robot.keyRelease(KeyEvent.VK_ENTER);
-//        } catch(AWTException e){
-//
-//        }
+        press(addPhotoButton);
+        //press(upPhoto);
+        driver.findElement(By.xpath("/html/body/input[1]")).sendKeys("C:\\Users\\juancarlos.cavero\\Desktop\\Badoo_bdd\\Troll.jpg");
     }
     public void buitreo(){
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

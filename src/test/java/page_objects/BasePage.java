@@ -16,15 +16,12 @@ public class BasePage {
         wait = new WebDriverWait(driver, 20);
     }
     protected  void press( By by){
-
-        wait.until(ExpectedConditions.elementToBeClickable(by));
+        wait.until(ExpectedConditions.presenceOfElementLocated(by));
         driver.findElement(by).click();
     }
-
     protected  void fill(By by, String text){
         driver.findElement(by).sendKeys(text);
     }
-
     protected   boolean pageExist(By by) {
         try {
             wait.until(ExpectedConditions.elementToBeClickable(by));
@@ -35,6 +32,5 @@ public class BasePage {
     }
     protected void waiter(int time){
         wait.withTimeout(time, TimeUnit.SECONDS);
-
     }
 }

@@ -12,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import page_objects.LoginPage;
 
+import java.util.concurrent.TimeUnit;
+
 public  class LoginValidSteps {
     private static SharedDriver driver;
     public LoginValidSteps(SharedDriver driver){
@@ -29,6 +31,7 @@ public  class LoginValidSteps {
     @When("^I enter valid credentials$")
     public void I_enter_valid_credentials(){
         LoginPage page = new LoginPage(driver);
+        driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
         page.enterCredentials("jc.caverogracia@gmail.com", "siqoseju");
     }
 
