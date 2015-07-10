@@ -2,6 +2,8 @@ package page_objects;
 import com.sun.prism.shader.Solid_TextureYV12_AlphaTest_Loader;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -16,8 +18,15 @@ public class BasePage {
         wait = new WebDriverWait(driver, 20);
     }
     protected  void press( By by){
-        wait.until(ExpectedConditions.presenceOfElementLocated(by));
-        driver.findElement(by).click();
+        if (System.getProperty("browser.set").equals("chrome")){
+            Actions actions = new Actions(this.driver);
+            WebElement element= driver.findElement(by);
+            actions.moveToElement(element).click().build().perform();
+        }
+        else {
+            wait.until(ExpectedConditions.elementToBeClickable(by));
+            driver.findElement(by).click();
+        }
     }
     protected  void fill(By by, String text){
         driver.findElement(by).sendKeys(text);

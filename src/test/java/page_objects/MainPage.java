@@ -11,6 +11,7 @@ import sun.applet.Main;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -45,10 +46,10 @@ public class MainPage extends BasePage{
 
         press(addPhotoButton);
         //press(upPhoto);
-        driver.findElement(By.xpath("/html/body/input[1]")).sendKeys("C:\\Users\\juancarlos.cavero\\Desktop\\Badoo_bdd\\Troll.jpg");
+        String filePath = new File("").getAbsolutePath().concat("Troll.jpg");
+        driver.findElement(By.xpath("/html/body/input[1]")).sendKeys(filePath);
     }
     public void buitreo(){
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         press(mainButton);
         press(girlProfile);
         try {

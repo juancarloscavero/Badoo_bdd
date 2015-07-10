@@ -72,14 +72,14 @@
           <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/page_objects/BasePage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.33224222">
-                  <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+                <state vertical-scroll-proportion="0.63993454">
+                  <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#731#732#0" expanded="true" />
-                    <element signature="e#784#785#0" expanded="true" />
-                    <element signature="e#1059#1060#0" expanded="true" />
-                    <element signature="e#1115#1116#0" expanded="true" />
+                    <element signature="e#1116#1117#0" expanded="true" />
+                    <element signature="e#1169#1170#0" expanded="true" />
+                    <element signature="e#1444#1445#0" expanded="true" />
+                    <element signature="e#1500#1501#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -103,16 +103,16 @@
             <entry file="file://$PROJECT_DIR$/src/test/java/steps_features/ChooseDriver.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+                  <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/page_objects/LoginPage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.19476268">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="10" column="82" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
                   <folding />
                 </state>
@@ -129,11 +129,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/page_objects/MainPage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+                <state vertical-scroll-proportion="0.5286416">
+                  <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -169,9 +169,9 @@
         <option value="$PROJECT_DIR$/src/test/java/steps_features/MainPageSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps_features/SharedDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps_features/LoginValidSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page_objects/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps_features/ChooseDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/page_objects/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page_objects/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page_objects/BasePage.java" />
       </list>
     </option>
@@ -985,24 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page_objects/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps_features/ChooseDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/steps_features/mainMenu.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1041,7 +1023,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page_objects/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19476268">
+        <state vertical-scroll-proportion="0.0">
           <caret line="10" column="82" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
           <folding />
         </state>
@@ -1049,14 +1031,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page_objects/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33224222">
-          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.63993454">
+          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps_features/ChooseDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page_objects/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5286416">
+          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
